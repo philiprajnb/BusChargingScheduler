@@ -47,7 +47,7 @@ scenario_labels = {
     for p in scenario_files
 }
 
-st.title("🚌 Bus Charging Scheduler")
+st.title("Bus Charging Scheduler")
 
 col_sel, col_weights = st.columns([3, 2])
 with col_sel:
