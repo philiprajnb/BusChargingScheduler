@@ -1,0 +1,180 @@
+{
+  "name": "Scenario 4 \u2014 Operator Heavy (KPN)",
+  "description": "8 of 10 BK buses are KPN. Operator fairness weight raised to 2.0 to balance across fleets.",
+  "route": {
+    "stops": [
+      {
+        "name": "Bengaluru",
+        "distance_from_prev": 0
+      },
+      {
+        "name": "A",
+        "distance_from_prev": 100
+      },
+      {
+        "name": "B",
+        "distance_from_prev": 120
+      },
+      {
+        "name": "C",
+        "distance_from_prev": 100
+      },
+      {
+        "name": "D",
+        "distance_from_prev": 120
+      },
+      {
+        "name": "Kochi",
+        "distance_from_prev": 100
+      }
+    ]
+  },
+  "network": {
+    "stations": {
+      "A": {
+        "charger_count": 1
+      },
+      "B": {
+        "charger_count": 1
+      },
+      "C": {
+        "charger_count": 1
+      },
+      "D": {
+        "charger_count": 1
+      }
+    }
+  },
+  "constraints": {
+    "max_range_km": 240,
+    "charge_time_min": 25,
+    "speed_kmh": 60
+  },
+  "weights": {
+    "individual": 1.0,
+    "operator": 2.0,
+    "overall": 1.0
+  },
+  "buses": [
+    {
+      "id": "BK01",
+      "operator": "KPN",
+      "direction": "BK",
+      "departure_min": 1140
+    },
+    {
+      "id": "BK02",
+      "operator": "KPN",
+      "direction": "BK",
+      "departure_min": 1155
+    },
+    {
+      "id": "BK03",
+      "operator": "KPN",
+      "direction": "BK",
+      "departure_min": 1170
+    },
+    {
+      "id": "BK04",
+      "operator": "KPN",
+      "direction": "BK",
+      "departure_min": 1185
+    },
+    {
+      "id": "BK05",
+      "operator": "KPN",
+      "direction": "BK",
+      "departure_min": 1200
+    },
+    {
+      "id": "BK06",
+      "operator": "KPN",
+      "direction": "BK",
+      "departure_min": 1215
+    },
+    {
+      "id": "BK07",
+      "operator": "KPN",
+      "direction": "BK",
+      "departure_min": 1230
+    },
+    {
+      "id": "BK08",
+      "operator": "KPN",
+      "direction": "BK",
+      "departure_min": 1245
+    },
+    {
+      "id": "BK09",
+      "operator": "Freshbus",
+      "direction": "BK",
+      "departure_min": 1260
+    },
+    {
+      "id": "BK10",
+      "operator": "Flixbus",
+      "direction": "BK",
+      "departure_min": 1275
+    },
+    {
+      "id": "KB01",
+      "operator": "KPN",
+      "direction": "KB",
+      "departure_min": 1140
+    },
+    {
+      "id": "KB02",
+      "operator": "Freshbus",
+      "direction": "KB",
+      "departure_min": 1155
+    },
+    {
+      "id": "KB03",
+      "operator": "Flixbus",
+      "direction": "KB",
+      "departure_min": 1170
+    },
+    {
+      "id": "KB04",
+      "operator": "KPN",
+      "direction": "KB",
+      "departure_min": 1185
+    },
+    {
+      "id": "KB05",
+      "operator": "Freshbus",
+      "direction": "KB",
+      "departure_min": 1200
+    },
+    {
+      "id": "KB06",
+      "operator": "Flixbus",
+      "direction": "KB",
+      "departure_min": 1215
+    },
+    {
+      "id": "KB07",
+      "operator": "KPN",
+      "direction": "KB",
+      "departure_min": 1230
+    },
+    {
+      "id": "KB08",
+      "operator": "Freshbus",
+      "direction": "KB",
+      "departure_min": 1245
+    },
+    {
+      "id": "KB09",
+      "operator": "Flixbus",
+      "direction": "KB",
+      "departure_min": 1260
+    },
+    {
+      "id": "KB10",
+      "operator": "KPN",
+      "direction": "KB",
+      "departure_min": 1275
+    }
+  ]
+}

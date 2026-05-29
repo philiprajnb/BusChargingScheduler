@@ -1,0 +1,180 @@
+{
+  "name": "Scenario 5 \u2014 Worst Case Convergence",
+  "description": "All 20 buses within a 72-min window (8-min gaps). Maximum charger contention. Weights equal.",
+  "route": {
+    "stops": [
+      {
+        "name": "Bengaluru",
+        "distance_from_prev": 0
+      },
+      {
+        "name": "A",
+        "distance_from_prev": 100
+      },
+      {
+        "name": "B",
+        "distance_from_prev": 120
+      },
+      {
+        "name": "C",
+        "distance_from_prev": 100
+      },
+      {
+        "name": "D",
+        "distance_from_prev": 120
+      },
+      {
+        "name": "Kochi",
+        "distance_from_prev": 100
+      }
+    ]
+  },
+  "network": {
+    "stations": {
+      "A": {
+        "charger_count": 1
+      },
+      "B": {
+        "charger_count": 1
+      },
+      "C": {
+        "charger_count": 1
+      },
+      "D": {
+        "charger_count": 1
+      }
+    }
+  },
+  "constraints": {
+    "max_range_km": 240,
+    "charge_time_min": 25,
+    "speed_kmh": 60
+  },
+  "weights": {
+    "individual": 1.0,
+    "operator": 1.0,
+    "overall": 1.0
+  },
+  "buses": [
+    {
+      "id": "BK01",
+      "operator": "KPN",
+      "direction": "BK",
+      "departure_min": 1140
+    },
+    {
+      "id": "BK02",
+      "operator": "Freshbus",
+      "direction": "BK",
+      "departure_min": 1148
+    },
+    {
+      "id": "BK03",
+      "operator": "Flixbus",
+      "direction": "BK",
+      "departure_min": 1156
+    },
+    {
+      "id": "BK04",
+      "operator": "KPN",
+      "direction": "BK",
+      "departure_min": 1164
+    },
+    {
+      "id": "BK05",
+      "operator": "Freshbus",
+      "direction": "BK",
+      "departure_min": 1172
+    },
+    {
+      "id": "BK06",
+      "operator": "Flixbus",
+      "direction": "BK",
+      "departure_min": 1180
+    },
+    {
+      "id": "BK07",
+      "operator": "KPN",
+      "direction": "BK",
+      "departure_min": 1188
+    },
+    {
+      "id": "BK08",
+      "operator": "Freshbus",
+      "direction": "BK",
+      "departure_min": 1196
+    },
+    {
+      "id": "BK09",
+      "operator": "Flixbus",
+      "direction": "BK",
+      "departure_min": 1204
+    },
+    {
+      "id": "BK10",
+      "operator": "KPN",
+      "direction": "BK",
+      "departure_min": 1212
+    },
+    {
+      "id": "KB01",
+      "operator": "KPN",
+      "direction": "KB",
+      "departure_min": 1140
+    },
+    {
+      "id": "KB02",
+      "operator": "Freshbus",
+      "direction": "KB",
+      "departure_min": 1148
+    },
+    {
+      "id": "KB03",
+      "operator": "Flixbus",
+      "direction": "KB",
+      "departure_min": 1156
+    },
+    {
+      "id": "KB04",
+      "operator": "KPN",
+      "direction": "KB",
+      "departure_min": 1164
+    },
+    {
+      "id": "KB05",
+      "operator": "Freshbus",
+      "direction": "KB",
+      "departure_min": 1172
+    },
+    {
+      "id": "KB06",
+      "operator": "Flixbus",
+      "direction": "KB",
+      "departure_min": 1180
+    },
+    {
+      "id": "KB07",
+      "operator": "KPN",
+      "direction": "KB",
+      "departure_min": 1188
+    },
+    {
+      "id": "KB08",
+      "operator": "Freshbus",
+      "direction": "KB",
+      "departure_min": 1196
+    },
+    {
+      "id": "KB09",
+      "operator": "Flixbus",
+      "direction": "KB",
+      "departure_min": 1204
+    },
+    {
+      "id": "KB10",
+      "operator": "KPN",
+      "direction": "KB",
+      "departure_min": 1212
+    }
+  ]
+}
